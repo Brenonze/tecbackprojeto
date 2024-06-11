@@ -56,7 +56,7 @@ public class UsuarioController {
         return ResponseEntity.ok(usuarioAtualizado);
     }
 
-    /// Ordenando usuarios por nome ///
+    /// RF 7 - Ordenando usuarios por nome ///
     @GetMapping("/ordenados")
     public List<Usuario> listarUsuariosOrdenados() {
         return usuarioService.listarUsuariosOrdenadosPorNome();
