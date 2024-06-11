@@ -31,6 +31,8 @@ public class FavoritosController {
         return favoritoService.listarTodosFavoritosPorUsuario(usuarioId);
     }
 
+    /// RF6 ///
+    
     @GetMapping("/usuario/{usuarioId}/filmes")
     public List<Favoritos> listarFilmesFavoritosPorUsuario(@PathVariable Long usuarioId) {
         return favoritoService.listarFilmesFavoritosPorUsuario(usuarioId);
@@ -41,6 +43,8 @@ public class FavoritosController {
         return favoritoService.listarSeriesFavoritosPorUsuario(usuarioId);
     }
 
+    /// ------------ ///
+    
     @DeleteMapping("/{favoritoId}")
     public void deletarFavoritoPorId(@PathVariable Integer favoritoId) {
         favoritoService.deletarFavoritoPorId(favoritoId);
