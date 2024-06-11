@@ -64,6 +64,8 @@ public class FavoritosService {
         return favoritosRepository.findByUsuario(usuario);
     }
 
+    /// RF6 ///
+    
     public List<Favoritos> listarFilmesFavoritosPorUsuario(Long usuarioId) {
         Usuario usuario = usuarioRepository.findById(usuarioId)
                 .orElseThrow(() -> new RuntimeException("Usuário não correspondente"));
